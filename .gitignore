@@ -7,4 +7,3 @@ django_project/users/__pycache__/
 venv/
 db.sqlite3
 django_project/settings.py
-
