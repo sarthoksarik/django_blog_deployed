@@ -1,12 +1,16 @@
 {% extends "blog/base.html" %}
 {% block content %}
 <h1>About Page</h1>
-<div class="content-section">
-    <div>
-        <p>
-            T means thoughtful, T means thoughtless, T can mean take-off. T is
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">What does T mean?</h5>
+        <p class="card-text">
+            T means <span class="text-primary">thoughtful</span>, T means <span class="text-danger">thoughtless</span>,
+            T can mean <span class="text-success">take-off</span>take-off. T is
             any thing you want.
         </p>
+        <a href="{% url 'blog-home' %}" class="btn btn-danger">Go To Home</a>
     </div>
 </div>
 {% endblock content %}
