@@ -65,8 +65,10 @@
                     <h3>Our Sidebar</h3>
                     <p class='text-muted'>Some ususal things about this blog.
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-light"><a href="">Latest Posts</a></li>
-                        <li class="list-group-item list-group-item-light"><a href="">Announcements</a></li>
+                        <li class="list-group-item list-group-item-light"><a href="{% url 'blog-home' %}">
+                                Latest Posts</a></li>
+                        <li class="list-group-item list-group-item-light"><a href="{% url 'blog-about' %}">
+                                Announcements</a></li>
                     </ul>
                     </p>
                 </div>
