@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'blog/faviconx.png' %}" />
     {% if title %}
-    <title>Thoughtless Blog - {{ title }} </title>
+    <title>TBlog - {{ title }} </title>
     {% else %}
-    <title>Thoughtless Blog </title>
+    <title>T Blog </title>
     {% endif %}
 </head>
 
@@ -23,7 +23,7 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
             <div class="container">
-                <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Thoughtless Blog</a>
+                <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">T Blog!</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
