@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from PIL import Image
+from PIL import Image, ExifTags
 
 # Create your models here.
 
@@ -30,7 +30,7 @@ class Profile(models.Model):
             elif exif[orientation] == 8:
                 img = img.rotate(90, expand=True)
 
-            img.thumbnail((img.width, img.height), img.ANTIALIAS)
+            img.thumbnail(img.width, img.height)
             img.save(self.image.path)
 
         except:
