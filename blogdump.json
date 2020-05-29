@@ -467,7 +467,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 8,
+        "pk": 2,
         "fields": {
             "password": "pbkdf2_sha256$180000$pCcFf5Ye8hhd$g4NFmb70eFp7cA6fGtft8nnOmRqSFVcZLN4KCihI8l0=",
             "last_login": "2020-05-03T20:28:19Z",
@@ -485,7 +485,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 9,
+        "pk": 3,
         "fields": {
             "password": "pbkdf2_sha256$180000$OXt51RBlZ4uk$SGFl3sd9g9zDzWoeAKJdD6xp4idcZBxh2CRMPyQEtfE=",
             "last_login": "2020-05-03T21:03:37.900Z",
@@ -503,7 +503,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 10,
+        "pk": 4,
         "fields": {
             "password": "pbkdf2_sha256$180000$l9XRjMNpTqll$5pFkpYUJ2DgeVYh//OuhgJzfgBiFF+1/rN57aaYQVP8=",
             "last_login": "2020-05-03T20:48:47.185Z",
@@ -521,7 +521,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 11,
+        "pk": 5,
         "fields": {
             "password": "pbkdf2_sha256$180000$ZZ6CuAoJOcMQ$p69EwIfBNa8Q5O8Ma4XBMEejbvz3+k8n8klIwZ1dnvo=",
             "last_login": "2020-05-03T21:15:32.358Z",
@@ -539,7 +539,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 12,
+        "pk": 6,
         "fields": {
             "password": "pbkdf2_sha256$180000$uXipjpJgk2JT$kJfOyQFd0BwqjmJyqx1i+47SbLnowiDNiMXCZ3l7nBA=",
             "last_login": "2020-05-04T13:35:11.894Z",
@@ -557,7 +557,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 13,
+        "pk": 7,
         "fields": {
             "password": "pbkdf2_sha256$180000$Mo4eEHp78Es9$/fwuOvDfxmlKJzGl+PhzJvV6G2E+aq+hAUPdC/plQYA=",
             "last_login": "2020-05-08T16:30:39.111Z",
@@ -575,7 +575,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 14,
+        "pk": 8,
         "fields": {
             "password": "pbkdf2_sha256$180000$UqOUDip42Ir7$czcqrzUG+CKM99rCQ5KN7pLVCwyZACrwlU8beENorvw=",
             "last_login": "2020-05-25T07:55:43.801Z",
@@ -593,7 +593,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 15,
+        "pk": 9,
         "fields": {
             "password": "pbkdf2_sha256$180000$Y6BWVt0tV2oc$V203OTArm23ouKoOcrlCYA2YZHAXP82MQSTEC0NqQDA=",
             "last_login": "2020-05-25T11:19:08.828Z",
@@ -611,7 +611,7 @@
     },
     {
         "model": "auth.user",
-        "pk": 16,
+        "pk": 10,
         "fields": {
             "password": "pbkdf2_sha256$180000$7gBZPrMPtGXt$ibndu01+djU7CqFvI41fJ72xvOvktEXypAZTzDuAEjI=",
             "last_login": "2020-05-25T13:42:23.407Z",
@@ -1320,7 +1320,7 @@
     },
     {
         "model": "blog.post",
-        "pk": 32,
+        "pk": 8,
         "fields": {
             "title": "Nasirul Huq Rishu",
             "content": "\u0995\u09cd\u09b2\u09be\u09b8 \u09e7\u09e6 \u098f\u09b0 \u098f\u0995\u099f\u09be \u099b\u09ac\u09bf \u09a6\u09c7\u0996\u09c7 \u09ac\u0989 \u09ac\u09b2\u09b2\u09cb, \" \u09a4\u09cb\u09ae\u09be\u09b0 \u098f\u0987 \u099b\u09ac\u09bf \u09a6\u09c7\u0996\u09b2\u09c7 \u0995\u09c7\u0989 \u09ac\u09bf\u09df\u09c7 \u0995\u09b0\u09a4\u09cb \u09a8\u09be\u0964\"\r\n\r\n\u0986\u09ae\u09bf \u09ac\u09b2\u09b2\u09be\u09ae, \" \u0995\u09cd\u09b2\u09be\u09b8 \u09e7\u09e6 \u098f \u0986\u09ae\u09bf \u09ac\u09bf\u09df\u09c7 \u0995\u09b0\u09a4\u09c7\u0993 \u099a\u09be\u0987\u09a8\u09be\u0987\u0964\"",
@@ -1330,7 +1330,7 @@
     },
     {
         "model": "blog.post",
-        "pk": 33,
+        "pk": 7,
         "fields": {
             "title": "\u09b8\u09be\u09a6\u09ae\u09be\u09a8 \u0993\u09b0\u09ab\u09c7 \u099c\u09b8\u09c0\u09ae\u09c7\u09b0 \u09aa\u09cd\u09b0\u09a5\u09ae \u0993\u09df\u09c7\u09ac\u09b8\u09be\u0987\u099f \u09ac\u09be\u09a8\u09be\u09a8\u09cb \u0989\u09aa\u09b2\u0995\u09cd\u09b7\u09cd\u09af\u09c7 \u0986\u09ae\u09be\u09b0 \u0985\u09a8\u09c1\u09ad\u09c2\u09a4\u09bf",
             "content": "\u09b8\u09be\u09a6\u09ae\u09be\u09a8 \u098f\u0995\u099f\u09be \u09b8\u09be\u09a6\u09be \u09ae\u09a8\u09c7\u09b0 \u09ae\u09be\u09a8\u09c1\u09b7\u0964 \u09a4\u09be\u09b0 \u09b8\u09ac \u0995\u09bf\u099b\u09c1\u0987 \u09b8\u09be\u09a6\u09be\u0964 \u09a5\u0995\u09a5\u0995\u09c7 \u09b8\u09be\u09a6\u09be \u09af\u09be\u0995\u09c7 \u09ac\u09b2\u09c7\u0964 \u09a6\u09c1\u09a8\u09bf\u09df\u09be\u09b0 \u09a4\u09be\u09ac\u09a6 \u099c\u09bf\u09a8\u09b8\u09c7 \u09a4\u09be\u09b0 \u0986\u0997\u09cd\u09b0\u09b9\u0964  \u09b8\u09c7 \u098f\u0995\u09be\u09a7\u09be\u09b0\u09c7 \u098f\u0995\u099c\u09a8 \u09a8\u099f\u09b0\u09a1\u09c7\u09ae\u09bf\u09df\u09be\u09a8, \u099f\u09c7\u0995 \u0997\u09bf\u0995 \u0993 \u0997\u09c7\u099c\u09c7\u099f \u09b2\u09be\u09ad\u09be\u09b0\u0964 \u0993\u09b0 \u09b8\u09cd\u09af\u09be\u09ae\u09b8\u09be\u0982 \u09a8\u09cb\u099f \u09e9 \u098f\u09b0 \u0995\u09b2\u09ae \u099f\u09be \u09aa\u09cd\u09b0\u09a5\u09ae\u09ac\u09be\u09b0 \u09a6\u09c7\u0996\u09bf \u0993 \u09a4\u09be \u09a6\u09bf\u09df\u09c7 \u09b8\u09cd\u0995\u09cd\u09b0\u09bf\u09a8\u09c7 \u09a6\u09be\u0997\u09be\u09a6\u09be\u0997\u09bf \u0995\u09b0\u09c7\u099b\u09bf\u0964   \u09a4\u09be\u09b0 \u09ae\u09a7\u09cd\u09af\u09c7 \u09aa\u09cd\u09b0\u09be\u09df\u09b6\u0987 \u09a1\u09c1\u09df\u09be\u09b2 \u0995\u09a8\u09b2\u09cd\u09ab\u09bf\u0995\u09cd\u099f\u09bf\u0982 \u09ae\u09a4\u09be\u09a6\u09b0\u09cd\u09b6  \u09a6\u09c7\u0996\u09be \u09af\u09be\u09df\u0964 \u09a4\u09ac\u09c7 \u098f\u0995\u099f\u09be \u0993\u09df\u09c7\u09ac\u09b8\u09be\u0987\u099f \u09ac\u09be\u09a8\u09be\u09a4\u09c7 \u09a4\u09be\u09b0 \u098f\u09a4\u09a6\u09bf\u09a8 \u09b2\u09be\u0997\u09be\u09a4\u09c7 \u0986\u09ae\u09bf \u09b8\u09a4\u09cd\u09af\u0987 \u09b9\u09a4\u09be\u09b6 \u09b9\u09df\u09c7\u099b\u09bf\u0964 \u098f\u099f\u09be \u09eb \u09ac\u099b\u09b0 \u0986\u0997\u09c7 \u0995\u09b0\u09be\u09b0 \u0995\u09a5\u09be \u099b\u09bf\u09b2\u09f7",
@@ -1340,7 +1340,7 @@
     },
     {
         "model": "blog.post",
-        "pk": 34,
+        "pk": 6,
         "fields": {
             "title": "Congratulations",
             "content": "Carry on",
@@ -1350,7 +1350,7 @@
     },
     {
         "model": "blog.post",
-        "pk": 35,
+        "pk": 5,
         "fields": {
             "title": "\u098f\u0995\u09bf \u0995\u09b0\u09b2\u09c7\u09a8 \u09b8\u09be\u09b0\u09bf\u0995 \u09b8\u09be\u09a6\u09ae\u09be\u09a8 !",
             "content": "\u09ae\u09be\u09a4\u09cd\u09b0 \u09e7\u09eb \u09a6\u09bf\u09a8\u09c7\u0987 \u09b8\u09be\u09b0\u09bf\u0995 \u09b8\u09be\u09a6\u09ae\u09be\u09a8 \u0993 \u09a6\u099c\u0999\u09cd\u0997 (Django) \u09a4\u09be\u09b0 \u09aa\u09cd\u09b0\u09a5\u09ae \u0993\u09df\u09c7\u09ac\u09b8\u09be\u0987\u099f \u09a4\u09c8\u09b0\u09bf \u0995\u09b0\u09b2\u09c7\u09a8\u0964 \u098f\u09a4\u09cb \u09a4\u09be\u09b0 \u09b8\u09be\u09b0\u09cd\u09a5\u0995 \u09ad\u09be\u09b2\u09cb\u09ac\u09be\u09b8\u09be \u0993 \u09aa\u09b0\u09bf\u09b6\u09cd\u09b0\u09ae\u09c7\u09b0 \u09ab\u09b8\u09b2\u0964",
@@ -1360,7 +1360,7 @@
     },
     {
         "model": "blog.post",
-        "pk": 36,
+        "pk": 4,
         "fields": {
             "title": "Eid Day",
             "content": "Eid Mubarak to everyone!",
@@ -1370,7 +1370,7 @@
     },
     {
         "model": "blog.post",
-        "pk": 38,
+        "pk": 3,
         "fields": {
             "title": "\u0995\u09bf\u099b\u09c1 \u098f\u0995\u099f\u09be \u09b2\u09bf\u0996\u09cb! - \u0986\u099a\u09cd\u099b\u09be \u09b2\u09bf\u0996\u09b2\u09be\u09ae!",
             "content": "\u0986\u09b8\u09b8\u09be\u09b2\u09be\u09ae\u09c1 \u0986\u09b2\u09be\u0987\u0995\u09c1\u09ae! \r\n\u09b0\u09be\u099c\u09a8\u09c0\u09a4\u09bf \u09ac\u09bf\u09b7\u09df\u0995 \u099d\u0997\u09dc\u09be\u099d\u09be\u099f\u09bf \u09ac\u09be\u09a6\u09cd\u09a6\u09bf\u09a8,\u09ac\u09be\u09b8\u09be\u09df \u09a5\u09be\u0995\u09c1\u09a8, \u09b8\u09c1\u0996\u09c0 \u099c\u09c0\u09ac\u09a8 \u0997\u09dc\u09c1\u09a8! \u098f\u0987\u0996\u09be\u09a8\u09c7 \u09aa\u09cb\u09b8\u09cd\u099f \u09a6\u09bf\u09a4\u09c7 \u09aa\u09c7\u09b0\u09c7 \u0985\u09a4\u09cd\u09af\u09a8\u09cd\u09a4 \u0986\u09a8\u09a8\u09cd\u09a6\u09bf\u09a4 ! (\u2764) \u09a7\u09a8\u09cd\u09af\u09ac\u09be\u09a6\u0964 \r\n\u0988\u09a6 \u09ae\u09c1\u09ac\u09be\u09b0\u0995 \ud83d\ude44\ud83d\ude44\ud83d\ude44",
@@ -1380,7 +1380,7 @@
     },
     {
         "model": "blog.post",
-        "pk": 39,
+        "pk": 2,
         "fields": {
             "title": "Ki R Bolbo",
             "content": "Shobai shundor koira shaija guija boisha ase. Bikal 5 tay Ghum theke uthe dekhi pasher bashar manush jon photoshoot kortese. Ami taaak matha nie, half pant pore brush kortesilam r tader photoshoot dekhe bekkol hoia boisha chilam",
@@ -1390,7 +1390,7 @@
     },
     {
         "model": "blog.post",
-        "pk": 40,
+        "pk": 1,
         "fields": {
             "title": "\u099a\u09be\u0981\u09a6 \u0993 \u0995\u09a6\u09ae",
             "content": "\u099a\u09be\u0981\u09a6 \u0989\u09a0\u09c7\u099b\u09c7, \u09ab\u09c1\u09b2 \u09ab\u09c1\u099f\u09c7\u099b\u09c7, \u0995\u09a6\u09ae \u09a4\u09b2\u09be\u09af\u09bc \u0995\u09c7?",
