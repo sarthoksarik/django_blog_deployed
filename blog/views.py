@@ -11,7 +11,7 @@ from django.views.generic import (
     UpdateView,
     DeleteView
 )
-from .models import Post
+from .models import Post, Announcements
 
 
 # Create your views here.
@@ -84,3 +84,13 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
+
+# view for announcement
+
+
+def announcements(request):
+    context = {
+        'announcements': Announcements.objects.all(),
+        'title': 'About'
+    }
+    return render(request, 'blog/announcements_list.html', context)

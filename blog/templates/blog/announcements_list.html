@@ -1,0 +1,32 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<h1>Announcement Page</h1>
+
+
+
+{% if announcements %}
+<!-- Announcement Model attributes: title(CharField), detail(TextField), date_created(DateTimeField), creator(Model -> User) -->
+{% for item in announcements %}
+<!-- announcements will be listed here -->
+<div class="card" style="max-width: 35rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{item.creator.username}}</h6>
+        <p class="card-text">{{item.detail}}</p>
+        <p class="card-text"><small class="text-muted">Posted on:
+                {{item.date_created|date:'d F, Y - H : i : s'}}</small>
+        </p>
+    </div>
+</div>
+
+{% endfor %}
+
+{% else %}
+<!-- If there is no announement objects -->
+<div class="alert alert-success">
+    <p>Looks like no announcements for now!</p>
+</div>
+
+{% endif %}
+
+{% endblock content %}

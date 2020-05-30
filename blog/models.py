@@ -15,3 +15,11 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'pk': self.pk})
+
+
+class Announcements(models.Model):
+    """ Model for announcements on the sidebar."""
+    title = models.CharField(max_length=100)
+    detail = models.TextField()
+    date_created = models.DateTimeField(default=timezone.now)
+    creator = models.ForeignKey(User, on_delete=models.CASCADE)
