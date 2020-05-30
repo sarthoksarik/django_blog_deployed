@@ -89,8 +89,15 @@ def about(request):
 
 
 def announcements(request):
+
+    announce_objects = Announcements.objects.all()
+
+    # reverse order the announcements according to datetime
+    reversed_announcements = sorted(
+        announce_objects, key=lambda item: item.date_created, reverse=True)
+
     context = {
-        'announcements': Announcements.objects.all(),
+        'announcements': reversed_announcements,
         'title': 'Announcements'
     }
     return render(request, 'blog/announcements_list.html', context)
