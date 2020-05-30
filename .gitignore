@@ -8,3 +8,7 @@ venv/
 db.sqlite3
 django_project/settings.py
 additional_files/
+blog/migrations/
+django_project/migrations/
+users/migrations
+
