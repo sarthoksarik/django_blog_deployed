@@ -91,6 +91,6 @@ def about(request):
 def announcements(request):
     context = {
         'announcements': Announcements.objects.all(),
-        'title': 'About'
+        'title': 'Announcements'
     }
     return render(request, 'blog/announcements_list.html', context)
