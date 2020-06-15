@@ -1,4 +1,7 @@
+from django.http import HttpResponse, HttpResponseRedirect
+from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import (
     LoginRequiredMixin,
     UserPassesTestMixin
@@ -101,3 +104,19 @@ def announcements(request):
         'title': 'Announcements'
     }
     return render(request, 'blog/announcements_list.html', context)
+
+
+@login_required
+def upvote_post(request, post_id):
+    post = get_object_or_404(Post, pk=post_id)
+    try:
+        user = request.user
+        if user in post.upvotes.all():
+            post.upvotes.remove(user)
+        else:
+            post.upvotes.add(user)
+    except:
+        pass
+    else:
+        # return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+        return HttpResponseRedirect(reverse('blog-home'))
