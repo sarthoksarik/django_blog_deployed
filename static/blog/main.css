@@ -86,3 +86,26 @@ body {
     color: #5e130d;
     font-weight: bold;
   }
+  .like-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .heart-liked {
+    fill: red;
+    position: relative;
+  }
+  .heart-liked:hover {
+    fill: black;
+  }
+
+  .heart-unliked {
+    fill: black;
+    position: relative;
+    /* top: 5px; */
+    /* width: 22px;
+    animation: pulse 1s ease infinite; */
+  }
+
+  .heart-unliked:hover {
+    fill: red;
+  }
