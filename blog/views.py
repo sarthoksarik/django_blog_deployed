@@ -109,14 +109,21 @@ def announcements(request):
 @login_required
 def upvote_post(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
-    try:
-        user = request.user
-        if user in post.upvotes.all():
-            post.upvotes.remove(user)
-        else:
-            post.upvotes.add(user)
-    except:
-        pass
+    if request.method == 'POST':
+
+        try:
+
+            user = request.user
+            if user in post.upvotes.all():
+                post.upvotes.remove(user)
+            else:
+                post.upvotes.add(user)
+            # (request.META.get('HTTP_REFERER'))
+            # (HttpResponseRedirect(request.META.get('HTTP_REFERER')))
+
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+        except:
+            return HttpResponseRedirect(reverse('blog-home'))
     else:
-        # return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
         return HttpResponseRedirect(reverse('blog-home'))
