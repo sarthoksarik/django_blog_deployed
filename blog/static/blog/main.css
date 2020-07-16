@@ -110,10 +110,11 @@ button.like-button:focus{
 .heart-unliked:hover {
   fill: red;
 }
-}
+
 
 .heart-liked:hover {
   fill: black;
+}
 }
 
 
