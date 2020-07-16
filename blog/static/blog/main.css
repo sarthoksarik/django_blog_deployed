@@ -90,9 +90,14 @@ a.article-title:hover {
   display: flex;
   justify-content: space-between;
 }
+
+
+.heart {
+  display: block;
+}
 .heart-liked {
   fill: red;
-  position: relative;
+  
 }
 .heart-liked:hover {
   fill: black;
@@ -100,7 +105,7 @@ a.article-title:hover {
 
 .heart-unliked {
   fill: black;
-  position: relative;
+  
   /* top: 5px; */
   /* width: 22px;
   animation: pulse 1s ease infinite; */
