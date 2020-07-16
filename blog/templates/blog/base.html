@@ -88,6 +88,43 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script>
+
+        let lflist = document.getElementsByClassName("upvoteform");
+        for (let el of lflist) {
+            el.addEventListener('submit', postUpvote);
+        }
+        function postUpvote(event) {
+            let targetbutton = event.target;
+            event.preventDefault();
+            let dataForm = new FormData();
+
+
+            let postID = event.target.querySelector('[name=postID]').value
+            dataForm.append('post_id', postID);
+            dataForm.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+            fetch('{% url "post-like" %}', {
+                method: 'post',
+                body: dataForm,
+            })
+                .then((result) => {
+                    console.log(result);
+                    if (result['redirected'] === true) {
+                        window.location.href = result['url']
+                    }
+                    let cl = targetbutton.querySelector("svg").classList;
+                    if (cl.contains("heart-liked")) {
+                        cl.remove("heart-liked");
+                        cl.add("heart-unliked");
+                    } else {
+                        cl.remove("heart-unliked");
+                        cl.add("heart-liked");
+                    }
+
+                });
+        }
+    </script>
 </body>
 
 </html>

@@ -107,9 +107,13 @@ def announcements(request):
 
 
 @login_required
-def upvote_post(request, post_id):
-    post = get_object_or_404(Post, pk=post_id)
+def upvote_post(request):
+
     if request.method == 'POST':
+
+        post_id = int(request.POST["post_id"])
+
+        post = get_object_or_404(Post, pk=post_id)
 
         try:
 
@@ -121,7 +125,7 @@ def upvote_post(request, post_id):
             # (request.META.get('HTTP_REFERER'))
             # (HttpResponseRedirect(request.META.get('HTTP_REFERER')))
 
-            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+            return HttpResponse("updated")
 
         except:
             return HttpResponseRedirect(reverse('blog-home'))

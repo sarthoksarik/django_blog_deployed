@@ -91,7 +91,9 @@ a.article-title:hover {
   justify-content: space-between;
 }
 
-
+button.like-button:focus{
+  outline: 0px;
+}
 .heart {
   display: block;
 }
