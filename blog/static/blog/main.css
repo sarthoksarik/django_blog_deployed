@@ -101,20 +101,19 @@ button.like-button:focus{
   fill: red;
   
 }
-.heart-liked:hover {
-  fill: black;
-}
+
 
 .heart-unliked {
   fill: black;
-  
-  /* top: 5px; */
-  /* width: 22px;
-  animation: pulse 1s ease infinite; */
 }
-
+@media (hover: hover) {
 .heart-unliked:hover {
   fill: red;
+}
+}
+
+.heart-liked:hover {
+  fill: black;
 }
 
 
