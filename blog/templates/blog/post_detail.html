@@ -37,8 +37,10 @@
             <!-- form  for like button ends -->
 
             <!-- Like Count Button -->
-            <div class="like-count">{{post.upvotes.count}} Like{{post.upvotes.count|pluralize}}</div>
+            <div class="like-count"><span class="count-number">{{post.upvotes.count}}</span>
+                <span class="word-like">Like</span>{{post.upvotes.count|pluralize}}</div>
             <!-- Like Count Button ends -->
+
 
         </div>
     </div>

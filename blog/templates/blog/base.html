@@ -109,7 +109,7 @@
                 body: dataForm,
             })
                 .then((result) => {
-                    console.log(result);
+                    //console.log(result);
                     if (result['redirected'] === true) {
                         window.location.href = result['url']
                     }
@@ -117,9 +117,22 @@
                     if (cl.contains("heart-liked")) {
                         cl.remove("heart-liked");
                         cl.add("heart-unliked");
+                        let num = targetbutton.parentElement.parentElement.querySelector(".count-number").innerText;
+                        num = parseInt(num) - 1;
+                        targetbutton.parentElement.parentElement.querySelector(".count-number").innerText = num;
+
                     } else {
                         cl.remove("heart-unliked");
                         cl.add("heart-liked");
+                        let num = targetbutton.parentElement.parentElement.querySelector(".count-number").innerText;
+                        num = parseInt(num) + 1;
+                        targetbutton.parentElement.parentElement.querySelector(".count-number").innerText = num;
+                    }
+                    let updatedNum = targetbutton.parentElement.parentElement.querySelector(".count-number").innerText;
+                    if (updatedNum == 1) {
+                        targetbutton.parentElement.parentElement.querySelector(".word-like").innerText = "Like";
+                    } else {
+                        targetbutton.parentElement.parentElement.querySelector(".word-like").innerText = "Likes";
                     }
 
                 });
