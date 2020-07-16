@@ -121,7 +121,7 @@ def upvote_post(request, post_id):
             # (request.META.get('HTTP_REFERER'))
             # (HttpResponseRedirect(request.META.get('HTTP_REFERER')))
 
-            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+            return HttpResponse({"likes": "given"})
 
         except:
             return HttpResponseRedirect(reverse('blog-home'))
