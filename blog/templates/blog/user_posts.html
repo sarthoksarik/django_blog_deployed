@@ -17,7 +17,7 @@
             <!-- form for like button -->
             <div class="likeform-cont">
 
-                <form method="post" action="{% url 'post-like' post.pk %}">
+                <form method="post" action="{% url 'post-like' post.pk %}" class="like-forms">
                     {% csrf_token %}
                     <button class="like-button" type="submit">
                         <svg {% if user in post.upvotes.all %} class="heart-liked" {% else %} class="heart-unliked"
