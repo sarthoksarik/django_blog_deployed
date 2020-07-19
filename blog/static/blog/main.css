@@ -100,12 +100,12 @@ button.like-button {
 button.like-button:focus{
   outline: 0px;
 }
-.heart {
+svg.heart {
   display: block;
 }
 .heart-liked {
   fill: red;
-  
+ 
 }
 
 
