@@ -6,7 +6,8 @@
   <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
   <div class="media-body">
     <div class="article-metadata">
-      <a class="mr-2 user-url" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
+      <a class="mr-2 user-url"
+        href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
       <small class="text-muted">{{ post.date_posted|date:"d F, Y" }}</small>
     </div>
     <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
@@ -23,8 +24,9 @@
           {% csrf_token %}
           <input type="hidden" name="postID" value={{post.pk}}>
           <button class="like-button" type="submit">
-            <svg {% if user in post.upvotes.all %} class="heart-liked" {% else %} class="heart-unliked" {% endif %}
-              width="21.33" height="19.73" viewBox="0 0 32 29.6">
+            <svg {% if user in post.upvotes.all %} class=" heart heart-liked" {% else %}
+              class="heart heart-unliked" {% endif %} width="21.33" height="19.73"
+              viewBox="0 0 32 29.6">
               <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
                           c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
             </svg>

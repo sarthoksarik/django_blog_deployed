@@ -89,8 +89,14 @@ a.article-title:hover {
 .like-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
+button.like-button {
+  border-width: 0px;
+  background-color: white;
+  border-color: white;
+  display: block;
+}
 button.like-button:focus{
   outline: 0px;
 }
@@ -118,8 +124,3 @@ button.like-button:focus{
 }
 
 
-button.like-button {
-  border-width: 0px;
-  background-color: white;
-  border-color: white;
-}
