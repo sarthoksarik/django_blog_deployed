@@ -99,6 +99,7 @@ button.like-button {
   border-width: 0px;
   background-color: white;
   border-color: white;
+  padding: 0.45rem;
   display: block;
   width: 100%;
 }
@@ -139,6 +140,11 @@ svg.heart {
   width: 100%;
   margin: auto;
   text-align: center;
+}
+
+.media-boy hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 
