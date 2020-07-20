@@ -93,19 +93,24 @@ a.article-title:hover {
 }
 
 .like-section > * {
-  flex-grow: 1;
+  flex: 1 1 0;
 }
 button.like-button {
   border-width: 0px;
   background-color: white;
   border-color: white;
   display: block;
+  width: 100%;
 }
 button.like-button:focus{
   outline: 0px;
 }
+button.like-button:active{
+  background: #e3e3e3;
+}
 svg.heart {
   display: block;
+  margin: auto;
 }
 .heart-liked {
   fill: red;
@@ -128,6 +133,12 @@ svg.heart {
 }
 .like-section > .like-count {
   text-align: right;
+  
+}
+.count-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 
