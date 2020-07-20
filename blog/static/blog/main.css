@@ -91,6 +91,10 @@ a.article-title:hover {
   justify-content: space-between;
   align-items: center;
 }
+
+.like-section > * {
+  flex-grow: 1;
+}
 button.like-button {
   border-width: 0px;
   background-color: white;
@@ -122,5 +126,10 @@ svg.heart {
   fill: black;
 }
 }
+.like-section > .like-count {
+  text-align: right;
+}
+
+
 
 
