@@ -105,7 +105,15 @@ button.like-button {
 }
 button.like-button:focus{
   outline: 0px;
+  animation: buttononly 0.6s;
 }
+
+@keyframes buttononly {
+  0% {background: #fff;}
+  50% {background: #e3e3e3;}
+  100% {background: #fff;}
+}
+
 button.like-button:active{
   background: #e3e3e3;
 }
