@@ -11,4 +11,6 @@ additional_files/
 blog/migrations/
 django_project/migrations/
 users/migrations/
-
+collectstatic.sh
+pullrestart.sh
+*.sh

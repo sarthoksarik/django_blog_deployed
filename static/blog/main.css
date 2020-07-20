@@ -1,111 +1,152 @@
 body {
-    background: #fafafa;
-    color: #333333;
-    margin-top: 5rem;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: #444444;
-  }
-  
-  ul {
-    margin: 0;
-  }
-  
-  .bg-steel {
-    background-color: #5e130d;
-  }
-  
-  .site-header .navbar-nav .nav-link {
-    color: #cbd5db;
-  }
-  
-  .site-header .navbar-nav .nav-link:hover {
-    color: #ffffff;
-  }
-  
-  .site-header .navbar-nav .nav-link.active {
-    font-weight: 500;
-  }
-  
-  .content-section {
-    background: #ffffff;
-    padding: 10px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-    margin-bottom: 20px;
-  }
-  
-  .article-title {
-    color: #444444;
-  }
-  
-  a.article-title:hover {
-    color: #b4331c;
-    text-decoration: none;
-  }
-  
-  .article-content {
-    white-space: pre-line;
-  }
-  
-  .article-img {
-    height: 65px;
-    width: 65px;
-    margin-right: 16px;
-  }
-  
-  .article-metadata {
-    padding-bottom: 1px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid #e3e3e3
-  }
-  
-  .article-metadata a:hover {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .article-svg {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-  }
-  
-  .account-img {
-    height: 125px;
-    width: 125px;
-    margin-right: 20px;
-    margin-bottom: 16px;
-  }
-  
-  .account-heading {
-    font-size: 2.5rem;
-  }
-  .user-url {
-    color: #5e130d;
-    font-weight: bold;
-  }
-  .like-section {
-    display: flex;
-    justify-content: space-between;
-  }
-  .heart-liked {
-    fill: red;
-    position: relative;
-  }
-  .heart-liked:hover {
-    fill: black;
-  }
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
 
-  .heart-unliked {
-    fill: black;
-    position: relative;
-    /* top: 5px; */
-    /* width: 22px;
-    animation: pulse 1s ease infinite; */
-  }
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
 
-  .heart-unliked:hover {
-    fill: red;
-  }
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #5e130d;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #b4331c;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+.user-url {
+  color: #5e130d;
+  font-weight: bold;
+}
+.like-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-section > * {
+  flex: 1 1 0;
+}
+button.like-button {
+  border-width: 0px;
+  background-color: white;
+  border-color: white;
+  padding: 0.45rem;
+  display: block;
+  width: 100%;
+}
+button.like-button:focus{
+  outline: 0px;
+}
+button.like-button:active{
+  background: #e3e3e3;
+}
+svg.heart {
+  display: block;
+  margin: auto;
+}
+.heart-liked {
+  fill: red;
+ 
+}
+
+
+.heart-unliked {
+  fill: black;
+}
+@media (hover: hover) {
+.heart-unliked:hover {
+  fill: red;
+}
+
+
+.heart-liked:hover {
+  fill: black;
+}
+}
+.like-section > .like-count {
+  text-align: right;
+  
+}
+.count-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.media-body hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+
+
+
